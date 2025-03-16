@@ -1,0 +1,92 @@
+
+/* CSS Variables for easy theme management */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --accent-color: #f5a623;
+  --bg-color-start: #f0f0f0;
+  --bg-color-end: #d9e4f5;
+  --text-color: #333;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, var(--bg-color-start), var(--bg-color-end));
+  color: var(--text-color);
+}
+
+/* Header Styles */
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container Styling */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 40px;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+p {
+  line-height: 1.8;
+}
+
+/* Video Container Styling */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border: 5px solid var(--secondary-color);
+  border-radius: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Video Caption Styling */
+.video-text {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+/* Link Styling with Hover Effects */
+.container a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.container a:hover {
+  color: var(--accent-color);
+}
